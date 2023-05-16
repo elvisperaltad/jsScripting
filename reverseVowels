@@ -1,0 +1,4 @@
+var str = "esta es la primera oracion que escribo"
+var noVowels = str.replace(/[aeiou]/gi,'').split('')
+var result = str.replace(/[^aeiou]/gi, c => noVowels.pop())
+console.log(result)
